@@ -92,9 +92,15 @@
         padding: 0 1rem;
         outline: none;
 
+        &:focus,
+        &:valid {
+            border-color: #ffd100;
+        }
+
         &:focus + label, 
         &:valid + label {
             top: 0;
+            color: #ffd100;
             background-color: rgba(34, 32, 32, 0.527);
             backdrop-filter: blur(2px);
             font-size: 0.75rem;

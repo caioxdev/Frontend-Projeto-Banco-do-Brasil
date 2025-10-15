@@ -12058,8 +12058,12 @@ body {
   padding: 0 1rem;
   outline: none;
 }
+.input-email input:focus, .input-email input:valid {
+  border-color: #ffd100;
+}
 .input-email input:focus + label, .input-email input:valid + label {
   top: 0;
+  color: #ffd100;
   background-color: rgba(34, 32, 32, 0.527);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
