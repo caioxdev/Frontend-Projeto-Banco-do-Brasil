@@ -1,17 +1,11 @@
 @use "../../node_modules/bootstrap/scss/bootstrap" as *;
-@use "variables" as v;
-@use "layout";
-@use "components";
+@use "../scss/base/index" as *;
+@use "../scss/layout/layout";
+@use "../scss/components/index" as *;
 
 
 @use "./pages/login";
-@use "./pages/configuracoes";
-@use "./pages/resultados";
 @use "./pages/resumo";
-
-// reset global
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@use "./pages/api";
+@use "./pages/resultados";
+@use "./pages/configuracoes";

@@ -4,15 +4,15 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
-}
-
-.content-enter {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    
+    .content-enter {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }

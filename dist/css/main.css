@@ -11980,6 +11980,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container-enter {
   width: 600px;
   height: 720px;
@@ -12024,6 +12030,81 @@ textarea.form-control-lg {
   justify-content: space-between;
   width: 500px;
   margin-top: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 85px;
+  width: 100%;
+  height: 90px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #12294B;
+  box-shadow: 0 6px 15px 0 rgba(5, 13, 29, 0.18);
+}
+
+.sidebar {
+  width: 280px;
+  min-width: 240px;
+  max-width: 300px;
+}
+.sidebar ul {
+  margin-top: 37px;
+  gap: 46px;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+  position: relative;
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  padding: 12px 20px 12px 26px;
+  font-size: 1.5rem;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.sidebar a:hover, .sidebar a:active {
+  background-color: #12294B;
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+}
+.sidebar .logout-red {
+  color: #d30000;
+}
+
+.btn-enter {
+  width: 500px;
+  display: block;
+  margin-top: 60px;
+}
+.btn-enter button {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #053D8F;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px #003179;
+  transition: transform 0.1s ease;
+}
+.btn-enter button:active {
+  transform: scale(0.95);
 }
 
 .input-email {
@@ -12121,31 +12202,6 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 
-.btn-enter {
-  width: 500px;
-  display: block;
-  margin-top: 60px;
-}
-.btn-enter button {
-  position: relative;
-  width: 100%;
-  height: 60px;
-  background-color: #053D8F;
-  border: none;
-  border-radius: 10px;
-  color: #ffffff;
-  font-family: Poppins;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 8px #003179;
-  transition: transform 0.1s ease;
-}
-.btn-enter button:active {
-  transform: scale(0.95);
-}
-
 .page-login {
   background-image: url("../../assets/images/img-fundo-entrar.webp");
   background-size: cover;
@@ -12153,8 +12209,7 @@ textarea.form-control-lg {
   background-position: center bottom;
   background-attachment: fixed;
 }
-
-.content-enter {
+.page-login .content-enter {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -12169,22 +12224,6 @@ textarea.form-control-lg {
   background-color: #0B2343;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 85px;
-  width: 100%;
-  height: 90px;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: #12294B;
-  box-shadow: 0 6px 15px 0 rgba(5, 13, 29, 0.18);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.page-api {
+  background-color: #0B2343;
 }/*# sourceMappingURL=main.css.map */

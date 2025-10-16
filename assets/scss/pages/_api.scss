@@ -1,1 +1,5 @@
-@use "../variables" as v;
+@use "../../scss/base/index" as v;
+
+.page-api {
+    background-color: v.$cor-fundo;
+}

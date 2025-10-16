@@ -1,0 +1,44 @@
+@use "../../scss/base/index" as v;
+
+.sidebar {
+    width: 280px;
+    min-width: 240px;
+    max-width: 300px;
+
+    ul {
+        margin-top: 37px;
+        gap: 46px;
+        list-style: none;
+    }
+
+    li {
+        width: 100%;
+        position: relative;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+        padding: 12px 20px 12px 26px;
+        font-size: 1.5rem;
+        width: 100%;
+        color: v.$cor-texto;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+
+        &:hover,
+        &:active {
+            background-color: v.$cor-secundaria;
+            border-radius: 0 10px 10px 0;
+            margin-left: 0;
+        }
+    }
+
+    .logout-red {
+        color: #d30000;
+    }
+
+}
