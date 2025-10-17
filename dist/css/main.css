@@ -12073,7 +12073,7 @@ header {
   position: relative;
   z-index: 1;
 }
-.sidebar a:hover, .sidebar a:active {
+.sidebar a:hover, .sidebar a:active, .sidebar a.active {
   background-color: #12294B;
   border-radius: 0 10px 10px 0;
   margin-left: 0;
