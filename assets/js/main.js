@@ -18,3 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// Modal quando apertar Sair
+
+const button = document.querySelector(".logout-modal")
+const modal = document.querySelector("dialog")
+const buttonSim = document.querySelector(".btn-sim")
+const buttonClose = document.querySelector("dialog .btn-nao")
+
+button.onclick = function () {
+    modal.showModal()
+}
+
+buttonClose.onclick = function () {
+    modal.close()
+}

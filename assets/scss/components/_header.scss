@@ -1,6 +1,7 @@
 @use "../../scss/base/index" as v;
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,4 +13,5 @@ header {
     left: 0;
     background-color: v.$header-cor;
     box-shadow: 0 6px 15px 0 rgba(5, 13, 29, 0.18);
+    z-index: 1000;
 }

@@ -1,7 +1,8 @@
 @use "../../scss/base/index" as v;
 
 .sidebar {
-    width: 280px;
+    position: fixed;
+    width: 360px;
     min-width: 240px;
     max-width: 300px;
 

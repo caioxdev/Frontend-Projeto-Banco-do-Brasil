@@ -1,0 +1,49 @@
+@use "../../scss/base/variables" as v;
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 350px;
+    max-width: 90%;
+    font-size: 1.2rem;
+    color: #0B2343;
+    font-family: Poppins;
+    font-weight: 700;
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        width: 100%;
+    }
+
+    button {
+        background: #0B2343;
+        border-radius: 10px;
+        border: none;
+        color: v.$cor-texto;
+        padding: 5px 15px;
+        font-size: 1rem;
+        font-family: Poppins;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all .5s start-end;
+
+        &:hover {
+            transform: scale(0.92);
+            background: #0b2343c2;
+        }
+    }
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.384);
+}
