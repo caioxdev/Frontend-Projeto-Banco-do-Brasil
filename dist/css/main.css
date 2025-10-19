@@ -12046,6 +12046,7 @@ textarea.form-control-lg {
   flex: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: #0B2343;
 }
 
@@ -12292,7 +12293,6 @@ dialog::backdrop {
 }
 
 .main-resumo {
-  flex: 1;
   padding: 32px 48px;
   height: calc(100vh - 37px);
   overflow-y: auto;
@@ -12351,7 +12351,7 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 16px;
+  padding: 40px;
   font-family: Poppins;
   font-weight: 700;
 }
@@ -12470,7 +12470,8 @@ dialog::backdrop {
 }
 
 .main-api {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 32px 48px;
   height: calc(100vh - 37px);
   overflow-y: auto;
@@ -12481,6 +12482,8 @@ dialog::backdrop {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1700px;
   margin-bottom: 32px;
 }
 .main-api h1 {
@@ -12497,9 +12500,9 @@ dialog::backdrop {
   color: #ffffff;
   border: none;
   border-radius: 15px;
-  width: 175px;
+  width: 184px;
   height: 65px;
-  padding: 9px 16px 9px 20px;
+  padding: 10px;
   font-weight: 500;
   font-size: 1.2rem;
   font-family: Poppins;
@@ -12509,17 +12512,17 @@ dialog::backdrop {
   background-color: rgba(61, 97, 150, 0.3882352941);
 }
 .main-api i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .container-cards-api {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
-  gap: 16px;
+  grid-template-columns: repeat(3, 420px);
+  gap: 5.7%;
 }
 
 .card-api {
-  width: 350px;
+  width: 420px;
   height: 168px;
   flex-shrink: 0;
   border-radius: 1.25rem;
@@ -12528,7 +12531,7 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 16px;
+  padding: 40px;
   font-family: Poppins;
   font-weight: 700;
 }
@@ -12541,7 +12544,8 @@ dialog::backdrop {
 
 .tabela-api {
   width: 100%;
-  max-width: 1218px;
+  max-width: 1430px;
+  height: inherit;
   padding: 65px;
   border-radius: 20px 20px 0 0;
   background: #12294B;
@@ -12563,7 +12567,8 @@ dialog::backdrop {
   width: 100%;
   border-collapse: collapse;
 }
-.tabela-api table th, .tabela-api table td {
+.tabela-api table th,
+.tabela-api table td {
   text-align: left;
   padding: 15px 20px;
 }
@@ -12591,6 +12596,60 @@ dialog::backdrop {
   background-color: rgba(66, 109, 165, 0.1019607843);
 }
 
+@media (max-width: 1728px) {
+  .container-cards-api {
+    display: grid;
+    grid-template-columns: repeat(3, 338px);
+    gap: 18px;
+  }
+  .card-api {
+    width: 338px;
+    height: auto;
+  }
+  .main-api .btn-baixar {
+    margin-right: 22px;
+  }
+  .tabela-api {
+    max-width: 1050px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-api {
+    margin-left: 0;
+    padding: 24px;
+  }
+  .container-cards-api {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-content: center;
+  }
+  .card-api {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+  .tabela-api {
+    padding: 24px;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 768px) {
+  .api-topo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .main-api h1 {
+    font-size: 2rem;
+  }
+  .btn-adicionar {
+    width: 100%;
+    justify-content: center;
+  }
+  .tabela-api {
+    padding: 16px;
+  }
+}
 .page-resultados {
   background-color: #0B2343;
 }
