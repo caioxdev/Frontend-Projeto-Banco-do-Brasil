@@ -11987,8 +11987,9 @@ textarea.form-control-lg {
 }
 
 .container-enter {
-  width: 600px;
-  height: 720px;
+  width: 90%;
+  max-width: 600px;
+  height: min(720px, 90vh);
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.116);
   background: rgba(255, 255, 255, 0.075);
