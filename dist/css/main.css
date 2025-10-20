@@ -11980,10 +11980,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
+}
+
+p {
+  margin: 0 !important;
 }
 
 .container-enter {
@@ -12084,8 +12090,8 @@ header {
 .sidebar a {
   display: flex;
   align-items: center;
-  gap: 20px;
   text-decoration: none;
+  gap: 20px;
   padding: 12px 20px 12px 26px;
   font-size: 1.5rem;
   width: 100%;
@@ -12540,6 +12546,76 @@ dialog::backdrop {
 }
 .card-api p {
   font-size: 1.8rem;
+}
+
+.filtro-api {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 16px;
+  font-family: Poppins;
+  position: relative;
+  margin: 20px 0;
+}
+.filtro-api p {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.filtro-api p i {
+  font-size: 1.5rem;
+}
+.filtro-api .dropdown {
+  position: relative;
+}
+.filtro-api .dropdown .btn-filtro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 99px;
+  height: 45px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: none;
+  background-color: #12294B;
+  cursor: pointer;
+  transition: all 0.12s ease-in;
+}
+.filtro-api .dropdown .btn-filtro:hover {
+  background-color: rgba(61, 97, 150, 0.3882352941);
+}
+.filtro-api .dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px 0;
+  min-width: 140px;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.filtro-api .dropdown .dropdown-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.filtro-api .dropdown .dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+.filtro-api .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .tabela-api {
