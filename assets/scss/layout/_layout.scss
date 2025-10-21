@@ -35,14 +35,25 @@
             text-transform: uppercase;
         }
     }
-} // fim container-enter
+}
 
+// fim container-enter
+
+@media (max-width: 1440px) {
+    .container-enter {
+        width: 90%;
+        max-width: 580px;
+        height: min(670px, 85vh);
+    }
+}
 
 // container-email-senha
 .container-email-senha {
     display: grid;
     gap: 30px;
-} // fim container-email-senha
+}
+
+// fim container-email-senha
 
 
 // container-check-forgot
@@ -52,7 +63,9 @@
     justify-content: space-between;
     width: 500px;
     margin-top: 5px;
-} // container-ckeck-forgot
+}
+
+// container-ckeck-forgot
 
 // Layout de header-aside-main
 .layout {

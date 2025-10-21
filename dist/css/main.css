@@ -12026,6 +12026,13 @@ p {
   text-transform: uppercase;
 }
 
+@media (max-width: 1440px) {
+  .container-enter {
+    width: 90%;
+    max-width: 580px;
+    height: min(670px, 85vh);
+  }
+}
 .container-email-senha {
   display: grid;
   gap: 30px;
