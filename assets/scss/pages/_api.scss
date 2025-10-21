@@ -241,7 +241,7 @@
 
     .main-api {
 
-        .btn-baixar {
+        .btn-adicionar {
             margin-right: 22px;
         }
     }
@@ -251,47 +251,26 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .main-api {
-        margin-left: 0;
-        padding: 24px;
-    }
-
+@media (max-width: 1440px) {
     .container-cards-api {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 305px);
+        gap: 18px;
     }
 
     .card-api {
-        width: 100%;
-        max-width: 340px;
+        width: 305px;
         height: auto;
     }
 
-    .tabela-api {
-        padding: 24px;
-        overflow-x: auto;
-    }
-}
+    .main-api {
 
-@media (max-width: 768px) {
-    .api-topo {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .main-api h1 {
-        font-size: 2rem;
-    }
-
-    .btn-adicionar {
-        width: 100%;
-        justify-content: center;
+        .btn-adicionar {
+            margin-right: 22px;
+        }
     }
 
     .tabela-api {
-        padding: 16px;
+        max-width: 955px;
     }
 }

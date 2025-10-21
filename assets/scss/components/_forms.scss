@@ -50,12 +50,12 @@
     outline: none;
 
     &:focus,
-    &:valid {
+    &:not(:placeholder-shown) {
         border-color: #ffd100;
     }
 
     &:focus+label,
-    &:valid+label {
+    &:not(:placeholder-shown) + label {
         top: 0;
         color: #ffd100;
         background-color: rgba(34, 32, 32, 0.527);
