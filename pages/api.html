@@ -33,15 +33,6 @@
                 </ul>
             </nav>
         </aside>
-        <dialog>
-            <p>Tem certeza que quer sair?</p>
-            <div class="container-btn">
-                <a href="../index.html">
-                    <button class="btn-sim">Sim</button>
-                </a>
-                <button class="btn-nao">Não</button>
-            </div>
-        </dialog>
         <main class="main-content main-api">
             <div class="api-topo">
                 <h1>API</h1>
@@ -111,10 +102,40 @@
                             <td>120ms</td>
                             <td>500 Error</td>
                             <td><button class="btn-acao">Ver</button></td>
-                    </tbody>
+                        </tbody>
                 </table>
             </section>
         </main>
     </div>
+
+    <dialog class="dialog-sair">
+        <p>Tem certeza que quer sair?</p>
+        <div class="container-btn">
+            <a href="../index.html">
+                <button class="btn-sim">Sim</button>
+            </a>
+            <button class="btn-nao">Não</button>
+        </div>
+    </dialog>
+    
+    
+    <dialog class="dialog-adicionar">
+        <div class="overlay-drag" id="overlay-drag"></div>
+        <div class="container-dialog-add" id="drop-zone">
+            <div id="logo"><i class="bi bi-file-earmark-text"></i></div>
+            <div class="container-text-add">
+                <p class="texto1">Arraste seu arquivo aqui</p>
+                <p class="texto2">ou clique para selecionar</p>
+                <div class="formatos-add">
+                    <p class="texto3">Formatos suportados: JSON, YAML, XML etc</p>
+                </div>
+            </div>
+            <input type="file" id="file-input" hidden>
+            <div class="container-btn-add-cancel">
+                    <button class="btn-cadastrar-add">Cadastrar</button>
+                <button class="btn-cancelar-add">Cancelar</button>
+            </div>
+        </div>
+    </dialog>
 </body>
 </html>

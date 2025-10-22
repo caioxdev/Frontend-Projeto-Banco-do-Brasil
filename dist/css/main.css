@@ -12276,7 +12276,7 @@ input:-webkit-autofill:active {
   text-decoration: underline;
 }
 
-dialog {
+.dialog-sair {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -12294,13 +12294,13 @@ dialog {
   font-family: Poppins;
   font-weight: 700;
 }
-dialog .container-btn {
+.dialog-sair .container-btn {
   display: flex;
   justify-content: center;
   gap: 80px;
   width: 100%;
 }
-dialog button {
+.dialog-sair button {
   background: #0B2343;
   border-radius: 10px;
   border: none;
@@ -12312,9 +12312,112 @@ dialog button {
   cursor: pointer;
   transition: all 0.5s start-end;
 }
-dialog button:hover {
+.dialog-sair button:hover {
   transform: scale(0.92);
   background: rgba(11, 35, 67, 0.7607843137);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.384);
+}
+
+.dialog-adicionar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 916px;
+  min-height: 480px;
+  max-height: 548px;
+  max-width: 90%;
+  z-index: 1;
+}
+.dialog-adicionar .container-dialog-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 29px;
+}
+.dialog-adicionar .container-dialog-add #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: #12294B;
+  border-radius: 50%;
+}
+.dialog-adicionar .container-dialog-add #logo i {
+  color: #fff;
+  font-size: 2rem;
+}
+.dialog-adicionar .container-dialog-add .container-text-add .texto1 {
+  color: #12294B;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.dialog-adicionar .container-dialog-add .container-text-add .texto2 {
+  color: #12294B;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.dialog-adicionar .container-dialog-add .container-text-add .formatos-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+  width: 366px;
+  height: 40px;
+  border-radius: 18px;
+  background: rgba(18, 41, 75, 0.83);
+}
+.dialog-adicionar .container-dialog-add .container-text-add .formatos-add .texto3 {
+  color: rgba(255, 255, 255, 0.88);
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.dialog-adicionar .container-btn-add-cancel {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  width: 100%;
+}
+.dialog-adicionar .container-btn-add-cancel .btn-cadastrar-add {
+  width: 170px;
+  height: 40px;
+  background: #12294B;
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-size: 0.95rem;
+  font-family: Poppins;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dialog-adicionar .container-btn-add-cancel .btn-cancelar-add {
+  width: 170px;
+  height: 40px;
+  background: none;
+  border-radius: 15px;
+  border: 1.5px solid #D30000;
+  color: #D30000;
+  padding: 5px 15px;
+  font-size: 0.95rem;
+  font-family: Poppins;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 dialog::backdrop {
@@ -12776,6 +12879,18 @@ dialog::backdrop {
     max-width: 955px;
   }
 }
+.overlay-drag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
 .page-resultados {
   background-color: #0B2343;
 }
