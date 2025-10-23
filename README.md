@@ -13,7 +13,7 @@ npm -v
 ```
 
 ## 📁 Estrutura de pastas
-
+```
 /frontend
  ├── assets/           → Imagens, ícones, arquivos estáticos
  │   ├── js/           → Scripts da aplicação (api.js, main.js)
@@ -29,7 +29,7 @@ npm -v
  ├── pages/            → Páginas HTML do projeto
  ├── index.html        → Página inicial
  └──  package.json     → Configuração do projeto / scripts
-
+```
  > 🔹 **Atenção:** A pasta `dist/` é gerada automaticamente e **não deve ser editada manualmente**.
  
 
