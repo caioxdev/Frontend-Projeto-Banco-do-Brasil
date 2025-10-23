@@ -4,8 +4,8 @@
   "description": "Projeto Frontend com Sass e Bootstrap",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch scss/main.scss dist/css/main.css",
-    "build": "sass scss/main.scss dist/css/main.css --style=compressed",
+    "dev": "sass --watch assets/scss/main.scss:dist/css/main.css",
+    "build": "sass assets/scss/main.scss dist/css/main.css --style=compressed",
     "start": "live-server --open=./"
   },
   "keywords": ["frontend", "sass", "bootstrap"],
