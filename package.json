@@ -9,7 +9,7 @@
     "start": "live-server --open=./"
   },
   "keywords": ["frontend", "sass", "bootstrap"],
-  "author": "Seu Nome",
+  "author": "Caio Seabra de Queiroz",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.8"
