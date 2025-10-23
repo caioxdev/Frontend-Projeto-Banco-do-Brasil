@@ -36,12 +36,11 @@ npm -v
 ## 📜 Scripts úteis (já adicionado)
 
 ```json
-"scripts": {
-  "dev": "sass --watch scss/main.scss:dist/css/main.css",
-  "build": "sass scss/main.scss:dist/css/main.css --style=compressed",
-  "start": "live-server --open=./"
-}
-
+  "scripts": {
+    "dev": "sass --watch assets/scss/main.scss:dist/css/main.css",
+    "build": "sass assets/scss/main.scss dist/css/main.css --style=compressed",
+    "start": "live-server --open=./"
+  },
 ```
 ## 🚀 Como rodar o projeto localmente
 
