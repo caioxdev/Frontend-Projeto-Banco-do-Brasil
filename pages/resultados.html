@@ -19,8 +19,8 @@
             <img src="../assets/images/perfil.webp" alt="Avatar perfil">
         </div>
     </header>
-    <main>
-         <aside>
+    <div class="layout">
+        <aside>
             <nav class="sidebar">
                 <ul class="nav flex-column">
                     <li><a href="../pages/resumo.html"><i class="bi bi-journal-text"></i> Resumo</a></li>
@@ -32,17 +32,92 @@
                 </ul>
             </nav>
         </aside>
-
-        <dialog class="dialog-sair">
-            <p>Tem certeza que quer sair?</p>
-            <div class="container-btn">
-                <a href="../index.html">
-                    <button class="btn-sim">Sim</button>
-                </a>
-                <button class="btn-nao">Não</button>
+        <main class="main-content main-resultados">
+            <div class="resultados-topo">
+                <h1>Resultados dos Testes</h1>
+                <button class="btn-baixar"><i class="bi bi-download"></i> Baixar PDF</button>
             </div>
-        </dialog>
+            <section class="container-cards-resultados">
+                <article class="card-api">
+                    <h2>Total Testes</h2>
+                    <p>0</p>
+                </article>
+                <article class="card-resultados">
+                    <h2>Sucessos</h2>
+                    <p>0</p>
+                </article>
+                <article class="card-resultados">
+                    <h2>Falhas</h2>
+                    <p>0</p>
+                </article>
+                <article class="card-resultados">
+                    <h2>Pendentes</h2>
+                    <p>0</p>
+                </article>
+            </section>
+            <section class="filtro-resultados">
+                <p><i class="bi bi-funnel"></i> Filtrar:</p>
+                <div class="dropdown">
+                    <button class="btn-resultados">API</button>
+                    <ul class="dropdown-menu">
+                        <li>API 1</li>
+                        <li>API 2</li>
+                        <li>API 3</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn-resultados">Período</button>
+                    <ul class="dropdown-menu">
+                        <li>Último ano</li>
+                        <li>Última semana</li>
+                        <li>Último mês</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn-resultados">Status</button>
+                    <ul class="dropdown-menu">
+                        <li>Sucesso</li>
+                        <li>Falha</li>
+                        <li>Pendente</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="tabela-resultados">
+                <h2>Resultados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>API</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Status</th>
+                            <th>Duração</th>
+                            <th>Erro</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/v1/nome</td>
+                            <td>00/00/0000</td>
+                            <td>00:00</td>
+                            <td>Pendente</td>
+                            <td>120ms</td>
+                            <td>500 Error</td>
+                            <td><button class="btn-acao">Ver</button></td>
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <dialog class="dialog-sair">
+        <p>Tem certeza que quer sair?</p>
+        <div class="container-btn">
+            <a href="../index.html">
+                <button class="btn-sim">Sim</button>
+            </a>
+            <button class="btn-nao">Não</button>
+        </div>
+    </dialog>
 
-    </main>
-</body>
 </html>
