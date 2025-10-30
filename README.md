@@ -50,3 +50,8 @@ npm run dev    # 🖌️ Desenvolvimento com watch
 npm run build  # 📦 Versão final minificada
 npm run start  # 🌐 Servidor local com live-server
 ```
+## 🌐 Rodar online
+
+O projeto está disponível no GitHub Pages:
+
+[GitHub Pages](https://caioxdev.github.io/Frontend-Projeto-Banco-do-Brasil/)
