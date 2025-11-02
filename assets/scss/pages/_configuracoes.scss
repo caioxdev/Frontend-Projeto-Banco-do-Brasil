@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     padding: 32px 48px;
-    height: calc(100vh - 85px);
+    min-height: calc(100vh - 37px);
     overflow-y: auto;
     color: v.$cor-texto;
     margin-left: 360px;
+    padding-bottom: 120px;
 
     .configuracoes-topo {
         display: flex;
@@ -27,5 +28,106 @@
             font-family: Poppins;
             font-weight: 700;
         }
+
+    }
+
+    h2 {
+        color: v.$cor-texto;
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 31px 0;
+    }
+
+    p,
+    label {
+        color: #BEBEBE;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .conta {
+        button {
+            width: 150px;
+            height: 34px;
+            border: none;
+            border-radius: 12px;
+            background-color: v.$cor-secundaria;
+            margin-top: 31px;
+            color: v.$cor-texto;
+            font-family: "Nunito", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .texto-configuracoes {
+        display: flex;
+    }
+
+    .texto {
+        position: relative;
+        left: 177px;
+    }
+
+    .texto-email {
+        position: relative;
+        left: 181px;
+    }
+
+    .texto-projeto {
+        position: relative;
+        left: 97px;
+    }
+
+    .texto-ambiente {
+        position: relative;
+        left: 153px;
+    }
+
+    .texto-url {
+        position: relative;
+        left: 153px;
+    }
+
+    .checkbox-label {
+        display: flex;
+        gap: 20px;
+    }
+
+    .texto-canal {
+        position: relative;
+        left: 190px;
+    }
+
+    .texto-frequencia {
+        position: relative;
+        left: 148px;
+    }
+
+    .texto-integracoes {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 31px;
+
+        a {
+            text-decoration: none;
+            color: #2074f3f1;
+            transition: color .5s ease-out;
+
+            &:hover {
+                color: #104abf;
+            }
+        }
+    }
+
+    #btn-salvar {
+        width: 160px;
+        height: 100px;
+        border: none;
+        border-radius: 12px;
+        background-color: v.$cor-secundaria;
+        color: #fff;
     }
 }
