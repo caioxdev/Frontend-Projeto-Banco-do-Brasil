@@ -12915,7 +12915,7 @@ dialog::backdrop {
   max-width: 1700px;
   margin-bottom: 32px;
 }
-.main-resultados h1 {
+.main-resultados .resultados-topo h1 {
   font-size: 3rem;
   font-family: Poppins;
   font-weight: 700;
@@ -13108,4 +13108,28 @@ dialog::backdrop {
 }
 .page-configuracoes {
   background-color: #0B2343;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main-configuracoes {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 48px;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  color: #ffffff;
+  margin-left: 360px;
+}
+.main-configuracoes .configuracoes-topo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+  margin-bottom: 32px;
+}
+.main-configuracoes .configuracoes-topo h1 {
+  font-size: 3rem;
+  font-family: Poppins;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
