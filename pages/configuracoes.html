@@ -11,7 +11,6 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Configurações</title>
 </head>
-
 <body class="page-configuracoes">
     <header>
         <div class="logo">
@@ -42,62 +41,63 @@
                 </div>
                 <section class="conta">
                     <h2>Conta</h2>
-                    <div class="texto-conta">
+                    <div class="texto-configuracoes">
                         <p>Nome</p>
-                        <p>Caio</p>
+                        <p class="texto">Caio</p>
                     </div>
                     <hr>
-                    <div class="texto-conta">
+                    <div class="texto-configuracoes">
                         <p>Email</p>
-                        <p>caio@exemplo.com</p>
+                        <p class="texto texto-email">caio@exemplo.com</p>
                     </div>
                     <hr>
-                    <div class="texto-conta">
+                    <div class="texto-configuracoes">
                         <p>Senha</p>
-                        <p>*******</p>
+                        <p class="texto">*******</p>
                     </div>
                     <button>Alterar senha</button>
                 </section>
                 <section class="projeto">
                     <h2>Projeto</h2>
-                    <div class="texto-projeto">
+                    <div class="texto-configuracoes">
                         <p>Nome do projeto</p>
-                        <p>API pagamento</p>
+                        <p class="texto texto-projeto">API pagamento</p>
                     </div>
                     <hr>
-                      <div class="texto-projeto">
+                      <div class="texto-configuracoes">
                         <p>Ambiente</p>
-                        <p>exemplo</p>
+                        <p class="texto texto-ambiente">exemplo</p>
                     </div>
                     <hr>
-                     <div class="texto-projeto">
+                     <div class="texto-configuracoes">
                         <p>URL Base</p>
-                        <p>https://localhost:0000.com</p>
+                        <p class="texto texto-url">https://localhost:0000.com</p>
                     </div>
                 </section>
                 <section class="notificacoes">
                     <h2>Notificações</h2>
-                    <div class="texto-notificacoes">
-                        <input type="checkbox" id="notificacoes" name="notificacoes">
+                    <div class="texto-configuracoes checkbox-label">
+                        <input class="form-check-input" type="checkbox" id="notificacoes" name="notificacoes">
                         <label for="notificacoes">Alertar falhas</label>
                     </div>
                     <hr>
-                    <div class="texto-notificacoes">
+                    <div class="texto-configuracoes">
                         <p>Canal</p>
-                        <p>exemplo</p>
+                        <p class="texto-canal">exemplo</p>
                     </div>
                     <hr>
-                     <div class="texto-notificacoes">
+                     <div class="texto-configuracoes">
                         <p>Frequência</p>
-                        <p>exemplo</p>
+                        <p class="texto-frequencia">exemplo</p>
                     </div>
                 </section>
-                <section class="integracoes">
+                <section class="texto-integracoes">
+                    <h2>Integrações</h2>
                     <nav>
                         <a href="#">Gerenciar integrações</a>
                     </nav>
                 </section>
-                <button>Salvar alterações</button>
+                <button id="btn-salvar">Salvar alterações</button>
             </main>
         </div>
         <dialog class="dialog-sair">

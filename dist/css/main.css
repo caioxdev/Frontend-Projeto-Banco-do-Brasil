@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -13116,10 +13116,11 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   padding: 32px 48px;
-  height: calc(100vh - 85px);
+  min-height: calc(100vh - 37px);
   overflow-y: auto;
   color: #ffffff;
   margin-left: 360px;
+  padding-bottom: 120px;
 }
 .main-configuracoes .configuracoes-topo {
   display: flex;
@@ -13132,4 +13133,86 @@ dialog::backdrop {
   font-size: 3rem;
   font-family: Poppins;
   font-weight: 700;
+}
+.main-configuracoes h2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 31px 0;
+}
+.main-configuracoes p,
+.main-configuracoes label {
+  color: #BEBEBE;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-configuracoes .conta button {
+  width: 150px;
+  height: 34px;
+  border: none;
+  border-radius: 12px;
+  background-color: #12294B;
+  margin-top: 31px;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main-configuracoes .texto-configuracoes {
+  display: flex;
+}
+.main-configuracoes .texto {
+  position: relative;
+  left: 177px;
+}
+.main-configuracoes .texto-email {
+  position: relative;
+  left: 181px;
+}
+.main-configuracoes .texto-projeto {
+  position: relative;
+  left: 97px;
+}
+.main-configuracoes .texto-ambiente {
+  position: relative;
+  left: 153px;
+}
+.main-configuracoes .texto-url {
+  position: relative;
+  left: 153px;
+}
+.main-configuracoes .checkbox-label {
+  display: flex;
+  gap: 20px;
+}
+.main-configuracoes .texto-canal {
+  position: relative;
+  left: 190px;
+}
+.main-configuracoes .texto-frequencia {
+  position: relative;
+  left: 148px;
+}
+.main-configuracoes .texto-integracoes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 31px;
+}
+.main-configuracoes .texto-integracoes a {
+  text-decoration: none;
+  color: rgba(32, 116, 243, 0.9450980392);
+  transition: color 0.5s ease-out;
+}
+.main-configuracoes .texto-integracoes a:hover {
+  color: #104abf;
+}
+.main-configuracoes #btn-salvar {
+  width: 160px;
+  height: 100px;
+  border: none;
+  border-radius: 12px;
+  background-color: #12294B;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
