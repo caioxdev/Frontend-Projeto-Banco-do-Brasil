@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Configurações</title>
 </head>
+
 <body class="page-configuracoes">
     <header>
         <div class="logo">
@@ -20,19 +22,84 @@
         </div>
     </header>
     <main>
-         <aside>
-            <nav class="sidebar">
-                <ul class="nav flex-column">
-                    <li><a href="../pages/resumo.html"><i class="bi bi-journal-text"></i> Resumo</a></li>
-                    <li><a href="../pages/api.html"><i class="bi bi-broadcast"></i> APIs</a></li>
-                    <li><a href="../pages/resultados.html"><i class="bi bi-bar-chart"></i> Resultados</a></li>
-                    <li><a href="../pages/configuracoes.html"><i class="bi bi-gear"></i> Configurações</a></li>
-                    <li><a href="#" class="logout mt-auto logout-red logout-modal"><i class="bi bi-box-arrow-right"></i>
-                            Sair</a></li>
-                </ul>
-            </nav>
-        </aside>
-
+        <div class="layout">
+            <aside>
+                <nav class="sidebar">
+                    <ul class="nav flex-column">
+                        <li><a href="../pages/resumo.html"><i class="bi bi-journal-text"></i> Resumo</a></li>
+                        <li><a href="../pages/api.html"><i class="bi bi-broadcast"></i> APIs</a></li>
+                        <li><a href="../pages/resultados.html"><i class="bi bi-bar-chart"></i> Resultados</a></li>
+                        <li><a href="../pages/configuracoes.html"><i class="bi bi-gear"></i> Configurações</a></li>
+                        <li><a href="#" class="logout mt-auto logout-red logout-modal"><i
+                                    class="bi bi-box-arrow-right"></i>
+                                Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main-content main-configuracoes">
+                <div class="configuracoes-topo">
+                    <h1>Configurações</h1>
+                </div>
+                <section class="conta">
+                    <h2>Conta</h2>
+                    <div class="texto-conta">
+                        <p>Nome</p>
+                        <p>Caio</p>
+                    </div>
+                    <hr>
+                    <div class="texto-conta">
+                        <p>Email</p>
+                        <p>caio@exemplo.com</p>
+                    </div>
+                    <hr>
+                    <div class="texto-conta">
+                        <p>Senha</p>
+                        <p>*******</p>
+                    </div>
+                    <button>Alterar senha</button>
+                </section>
+                <section class="projeto">
+                    <h2>Projeto</h2>
+                    <div class="texto-projeto">
+                        <p>Nome do projeto</p>
+                        <p>API pagamento</p>
+                    </div>
+                    <hr>
+                      <div class="texto-projeto">
+                        <p>Ambiente</p>
+                        <p>exemplo</p>
+                    </div>
+                    <hr>
+                     <div class="texto-projeto">
+                        <p>URL Base</p>
+                        <p>https://localhost:0000.com</p>
+                    </div>
+                </section>
+                <section class="notificacoes">
+                    <h2>Notificações</h2>
+                    <div class="texto-notificacoes">
+                        <input type="checkbox" id="notificacoes" name="notificacoes">
+                        <label for="notificacoes">Alertar falhas</label>
+                    </div>
+                    <hr>
+                    <div class="texto-notificacoes">
+                        <p>Canal</p>
+                        <p>exemplo</p>
+                    </div>
+                    <hr>
+                     <div class="texto-notificacoes">
+                        <p>Frequência</p>
+                        <p>exemplo</p>
+                    </div>
+                </section>
+                <section class="integracoes">
+                    <nav>
+                        <a href="#">Gerenciar integrações</a>
+                    </nav>
+                </section>
+                <button>Salvar alterações</button>
+            </main>
+        </div>
         <dialog class="dialog-sair">
             <p>Tem certeza que quer sair?</p>
             <div class="container-btn">
@@ -42,7 +109,6 @@
                 <button class="btn-nao">Não</button>
             </div>
         </dialog>
-
-    </main>
 </body>
+
 </html>
