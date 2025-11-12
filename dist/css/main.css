@@ -12696,9 +12696,7 @@ dialog::backdrop {
 }
 
 .container-cards-api {
-  display: grid;
-  grid-template-columns: repeat(3, 420px);
-  gap: 5.7%;
+  display: flex;
 }
 
 .card-api {
