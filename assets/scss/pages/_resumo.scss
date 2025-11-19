@@ -2,14 +2,14 @@
 
 .page-resumo {
     background-color: v.$cor-fundo;
-    min-height: 100vh;
-    overflow: hidden;
+    margin-top: 90px;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main-resumo {
     padding: 32px 48px;
-    height: calc(100vh - 37px);
-    overflow-y: auto;
     color: v.$cor-texto;
     margin-left: 360px;
 
@@ -86,9 +86,10 @@
 .tabela-resultados {
     width: 100%;
     max-width: 1430px;
-    height: inherit;
     padding: 65px;
-    border-radius: 20px 20px 0 0;
+    flex: 1;
+    margin-top: auto;
+    border-radius: 20px;
     background: v.$cor-secundaria;
     font-family: Poppins;
     margin-top: 18px;
