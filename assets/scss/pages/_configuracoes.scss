@@ -2,19 +2,18 @@
 
 .page-configuracoes {
     background-color: v.$cor-fundo;
-    min-height: 100vh;
-    overflow: hidden;
+    margin-top: 90px;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main-configuracoes {
     display: flex;
     flex-direction: column;
     padding: 32px 48px;
-    min-height: calc(100vh - 37px);
-    overflow-y: auto;
     color: v.$cor-texto;
     margin-left: 360px;
-    padding-bottom: 120px;
 
     .configuracoes-topo {
         display: flex;
@@ -47,20 +46,21 @@
         font-weight: 500;
     }
 
-    .conta {
-        button {
-            width: 150px;
-            height: 34px;
-            border: none;
-            border-radius: 12px;
-            background-color: v.$cor-secundaria;
-            margin-top: 31px;
-            color: v.$cor-texto;
-            font-family: "Nunito", sans-serif;
-            font-size: 15px;
-            font-weight: 500;
-        }
-    }
+   
+    #btn-alterar {
+        width: 150px;
+        height: 34px;
+        border: none;
+        border-radius: 12px;
+        background-color: v.$cor-secundaria;
+        margin-top: 31px;
+        color: v.$cor-texto;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all .12s ease-in;
+     }
+
 
     .texto-configuracoes {
         display: flex;
@@ -123,11 +123,22 @@
     }
 
     #btn-salvar {
-        width: 160px;
-        height: 100px;
+        width: 180px;
+        height: 34px;
         border: none;
         border-radius: 12px;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
         background-color: v.$cor-secundaria;
         color: #fff;
+        transition: all .12s ease-in;
+    }
+}
+
+#btn-salvar,
+#btn-alterar {
+    &:hover {
+        background-color: #3d619663;
     }
 }

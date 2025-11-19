@@ -11988,6 +11988,11 @@ textarea.form-control-lg {
   box-sizing: border-box !important;
 }
 
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
 p {
   margin: 0 !important;
 }
@@ -12048,7 +12053,7 @@ p {
 
 .layout {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -12071,7 +12076,6 @@ header {
   padding: 0 85px;
   width: 100%;
   height: 90px;
-  position: relative;
   top: 0;
   left: 0;
   background-color: #12294B;
@@ -12429,6 +12433,10 @@ dialog::backdrop {
   font-family: Poppins;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.dialog-adicionar .container-btn-add-cancel .btn-cadastrar-add:hover {
+  background-color: rgba(18, 41, 75, 0.768627451);
 }
 .dialog-adicionar .container-btn-add-cancel .btn-cancelar-add {
   width: 170px;
@@ -12442,6 +12450,11 @@ dialog::backdrop {
   font-family: Poppins;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.dialog-adicionar .container-btn-add-cancel .btn-cancelar-add:hover {
+  background-color: #D30000;
+  color: #ffffff;
 }
 
 dialog::backdrop {
@@ -12468,14 +12481,14 @@ dialog::backdrop {
 
 .page-resumo {
   background-color: #0B2343;
-  min-height: 100vh;
-  overflow: hidden;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-resumo {
   padding: 32px 48px;
-  height: calc(100vh - 37px);
-  overflow-y: auto;
   color: #ffffff;
   margin-left: 360px;
 }
@@ -12546,9 +12559,10 @@ dialog::backdrop {
 .tabela-resultados {
   width: 100%;
   max-width: 1430px;
-  height: inherit;
   padding: 65px;
-  border-radius: 20px 20px 0 0;
+  flex: 1;
+  margin-top: auto;
+  border-radius: 20px;
   background: #12294B;
   font-family: Poppins;
   margin-top: 18px;
@@ -12645,16 +12659,19 @@ dialog::backdrop {
 }
 .page-api {
   background-color: #0B2343;
-  min-height: 100vh;
-  overflow: hidden;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-api {
   display: flex;
   flex-direction: column;
   padding: 32px 48px;
-  height: calc(100vh - 37px);
-  overflow-y: auto;
+  flex: 1;
   color: #ffffff;
   margin-left: 360px;
 }
@@ -12793,9 +12810,10 @@ dialog::backdrop {
 .tabela-api {
   width: 100%;
   max-width: 1430px;
-  height: inherit;
+  flex: 1;
+  margin-top: auto;
   padding: 65px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   background: #12294B;
   font-family: Poppins;
   margin-top: 18px;
@@ -12892,16 +12910,17 @@ dialog::backdrop {
 
 .page-resultados {
   background-color: #0B2343;
-  min-height: 100vh;
-  overflow: hidden;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-resultados {
   display: flex;
   flex-direction: column;
   padding: 32px 48px;
-  height: calc(100vh - 37px);
-  overflow-y: auto;
+  width: calc(100% - 360px);
   color: #ffffff;
   margin-left: 360px;
 }
@@ -13019,9 +13038,10 @@ dialog::backdrop {
 .tabela-resultados {
   width: 100%;
   max-width: 1430px;
-  height: inherit;
   padding: 65px;
-  border-radius: 20px 20px 0 0;
+  flex: 1;
+  margin-top: auto;
+  border-radius: 20px;
   background: #12294B;
   font-family: Poppins;
   margin-top: 18px;
@@ -13106,19 +13126,18 @@ dialog::backdrop {
 }
 .page-configuracoes {
   background-color: #0B2343;
-  min-height: 100vh;
-  overflow: hidden;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-configuracoes {
   display: flex;
   flex-direction: column;
   padding: 32px 48px;
-  min-height: calc(100vh - 37px);
-  overflow-y: auto;
   color: #ffffff;
   margin-left: 360px;
-  padding-bottom: 120px;
 }
 .main-configuracoes .configuracoes-topo {
   display: flex;
@@ -13146,7 +13165,7 @@ dialog::backdrop {
   font-size: 18px;
   font-weight: 500;
 }
-.main-configuracoes .conta button {
+.main-configuracoes #btn-alterar {
   width: 150px;
   height: 34px;
   border: none;
@@ -13157,6 +13176,7 @@ dialog::backdrop {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 500;
+  transition: all 0.12s ease-in;
 }
 .main-configuracoes .texto-configuracoes {
   display: flex;
@@ -13207,10 +13227,19 @@ dialog::backdrop {
   color: #104abf;
 }
 .main-configuracoes #btn-salvar {
-  width: 160px;
-  height: 100px;
+  width: 180px;
+  height: 34px;
   border: none;
   border-radius: 12px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   background-color: #12294B;
   color: #fff;
+  transition: all 0.12s ease-in;
+}
+
+#btn-salvar:hover,
+#btn-alterar:hover {
+  background-color: rgba(61, 97, 150, 0.3882352941);
 }/*# sourceMappingURL=main.css.map */

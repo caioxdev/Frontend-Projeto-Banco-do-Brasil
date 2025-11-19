@@ -1,5 +1,6 @@
 @use "../../scss/base/variables" as v;
 
+// DIALOG PARA SAIR DA PÁGINA
 .dialog-sair {
     position: fixed;
     top: 50%;
@@ -48,6 +49,7 @@ dialog::backdrop {
     background: rgba(0, 0, 0, 0.384);
 }
 
+// DIALOG PARA ADICIONAR API
 .dialog-adicionar {
     position: fixed;
     top: 50%;
@@ -141,6 +143,11 @@ dialog::backdrop {
             font-family: Poppins;
             font-weight: 700;
             cursor: pointer;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                background-color: #12294bc4;
+            }
         }
 
           .btn-cancelar-add {
@@ -155,6 +162,12 @@ dialog::backdrop {
             font-family: Poppins;
             font-weight: 700;
             cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #D30000;
+                color: v.$cor-texto;
+            }
         }
     }
 

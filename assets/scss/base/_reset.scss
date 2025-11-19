@@ -7,6 +7,12 @@
   box-sizing: border-box !important;
 }
 
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+
 p {
     margin: 0 !important;
 }
